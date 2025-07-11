@@ -1,0 +1,132 @@
+.admin-orders-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  background-color: rgba(52, 152, 219, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  color: #3498db;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table th {
+  background-color: rgba(52, 152, 219, 0.1);
+  padding: 1rem;
+  text-align: left;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.orders-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.orders-table tr:hover {
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-name {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.customer-email {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.status-select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status-select.pending {
+  background-color: rgba(241, 196, 15, 0.1);
+  color: #f39c12;
+}
+
+.status-select.processing {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.status-select.shipped {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+}
+
+.status-select.delivered {
+  background-color: rgba(39, 174, 96, 0.1);
+  color: #27ae60;
+}
+
+.status-select.cancelled {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+}
+
+.total-amount {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.shipping-address {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.error-snackbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .admin-orders-container {
+    padding: 1rem;
+  }
+
+  .orders-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+} 
